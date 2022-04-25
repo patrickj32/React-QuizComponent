@@ -6,7 +6,7 @@ render(){
 return (
    
    <li>
-        <button>{quiz_question.answer_options[0]}</button>
+        <button>{this.props.button_text }</button>
    </li>
         )
 
