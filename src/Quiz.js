@@ -11,7 +11,9 @@ class Quiz extends Component {
     render() {
         return (
             <div>
-                <div><QuizQuestion quiz_question={quizData.quiz_questions[this.state.quiz_position = 1]} /> 
+                <div>
+                    <QuizQuestion quiz_question={quizData.quiz_question[this.state.quiz_position - 1]} />
+
                 </div>
             </div>
         )
@@ -21,5 +23,3 @@ class Quiz extends Component {
 
 export default Quiz
 
-// Inside of that div with a className of QuizQuestion, access the first element in the 
-// quiz_questions property of the quizData object, and display the instruction_text value.
