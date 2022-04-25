@@ -5,6 +5,20 @@ class QuizQuestion extends Component {
         super(props)
         
     }
+    render(){
+        return(
+        <main>
+            <section>
+                <p></p>
+            </section>
+            <section className="buttons">
+                <ul>
+
+                </ul>
+            </section>
+        </main>
+        )
+    }
 }
 
 
