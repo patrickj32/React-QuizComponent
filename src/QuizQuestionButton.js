@@ -6,6 +6,8 @@ class QuizQuestionButton extends Component {
        
     }
 
+    clickHandler = this.handleClick.bind(this)
+
     render() {
         return (
             
@@ -19,3 +21,5 @@ class QuizQuestionButton extends Component {
 
 
 export default QuizQuestionButton
+
+

@@ -3,6 +3,10 @@ import QuizQuestionButton from './QuizQuestionButton'
 
 class QuizQuestion extends Component {
 
+    handleClick(button_text) {
+
+    }
+
     render() {
         return (
             <main>
