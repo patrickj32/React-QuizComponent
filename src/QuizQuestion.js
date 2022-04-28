@@ -12,7 +12,11 @@ class QuizQuestion extends Component {
     handleClick(button_text) {
         if (button_text === this.props.quiz_question.answer) {
             this.props.showNextQuestionHandler()
+            this.setState({incorrectAnswer = false})
+        }else{
+            this.setState({ incorrectAnswer = true})
         }
+       
     }
 
     render() {
@@ -29,6 +33,8 @@ class QuizQuestion extends Component {
                             clickHandler={this.handleClick.bind(this)} />
                     })}
                 </ul>
+               {this.state.incorrectAnswer ? <p classname= 'error'>Sorry, thats not right</p>
+               : null} 
             </main>
         )
     }
