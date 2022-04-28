@@ -28,7 +28,7 @@ render() {
         </div>
     )
 }
-} 0
+} 
 
 
 export default Quiz
